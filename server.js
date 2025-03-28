@@ -9,7 +9,11 @@ import draftRouter from "./routes/draftRoute.js";
 dotenv.config();
 
 const app = express();
-app.use(cors({ origin: "*" }));
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://letter-writer-client.vercel.app",
+];
+app.use(cors({ origin: allowedOrigins, credentials: true }));
 app.use(express.json());
 
 app.use("/", authRouter);
