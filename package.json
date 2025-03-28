@@ -1,0 +1,27 @@
+{
+  "name": "server-letter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "firebase-admin": "^13.2.0",
+    "googleapis": "^148.0.0",
+    "html-to-docx": "^1.8.0",
+    "htmlparser2": "^10.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mammoth": "^1.9.0",
+    "mongoose": "^8.13.0",
+    "nodemon": "^3.1.9"
+  }
+}
